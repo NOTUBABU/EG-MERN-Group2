@@ -1,3 +1,13 @@
+
+.have-to-fill{
+ color: red;  
+}
+
+.create-event-page{
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #fad961 100%);
+}
+
+
 .create-event-container {
   max-width: 800px;
   margin: 0 auto;
@@ -152,12 +162,12 @@
 }
 
 .cancel-btn {
-  background: #f5f5f5;
-  color: #666;
+  background: #992929c8;
+  color: white;
 }
 
 .cancel-btn:hover {
-  background: #e0e0e0;
+  background: #e50e0e;
 }
 
 .submit-btn {

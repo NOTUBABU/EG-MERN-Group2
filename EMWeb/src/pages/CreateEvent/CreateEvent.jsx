@@ -94,7 +94,7 @@ const CreateEvent = () => {
   };
 
   return (
-    <div>
+    <div className="create-event-page">
       <Navigation />
       <div className="create-event-container">
         <div className="create-event-form">
@@ -102,7 +102,7 @@ const CreateEvent = () => {
           
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="heading">Event Name *</label>
+              <label htmlFor="heading">Event Name<span className="have-to-fill">**</span></label>
               <input
                 type="text"
                 id="heading"
@@ -116,7 +116,7 @@ const CreateEvent = () => {
 
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="date">Date *</label>
+                <label htmlFor="date">Date<span className="have-to-fill">**</span></label>
                 <input
                   type="date"
                   id="date"
@@ -128,7 +128,19 @@ const CreateEvent = () => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="time">Time *</label>
+                <label htmlFor="time"> Start Time<span className="have-to-fill">**</span></label>
+                <input
+                  type="time"
+                  id="time"
+                  name="time"
+                  value={formData.time}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="time"> End Time<span className="have-to-fill">**</span></label>
                 <input
                   type="time"
                   id="time"
@@ -141,7 +153,7 @@ const CreateEvent = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="location">Location *</label>
+              <label htmlFor="location">Location<span className="have-to-fill">**</span></label>
               <input
                 type="text"
                 id="location"
@@ -154,7 +166,7 @@ const CreateEvent = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="description">Description *</label>
+              <label htmlFor="description">Description<span className="have-to-fill">**</span></label>
               <textarea
                 id="description"
                 name="description"
@@ -167,7 +179,7 @@ const CreateEvent = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="image">Event Image</label>
+              <label htmlFor="image">Event Image(Optional)</label>
               <div className="image-upload-section">
                 <input
                   type="file"
