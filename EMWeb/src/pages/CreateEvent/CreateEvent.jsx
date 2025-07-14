@@ -34,7 +34,7 @@ const CreateEvent = () => {
           ...prev,
           image: file
         }));
-        
+
         // Create preview
         const reader = new FileReader();
         reader.onload = (e) => {
@@ -82,7 +82,7 @@ const CreateEvent = () => {
 
       // Show success message
       alert('Event created successfully!');
-      
+
       // Navigate to home page
       navigate('/');
     } catch (error) {
@@ -99,7 +99,7 @@ const CreateEvent = () => {
       <div className="create-event-container">
         <div className="create-event-form">
           <h1>Create New Event</h1>
-          
+
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="heading">Event Name<span className="have-to-fill">**</span></label>
@@ -189,15 +189,15 @@ const CreateEvent = () => {
                   onChange={handleImageChange}
                   className="image-input"
                 />
-                <div 
+                <div
                   className="image-preview-container"
                   onClick={() => document.getElementById('image').click()}
                 >
                   {imagePreview ? (
                     <div className="image-preview">
                       <img src={imagePreview} alt="Event preview" />
-                      <button 
-                        type="button" 
+                      <button
+                        type="button"
                         className="remove-image"
                         onClick={(e) => {
                           e.stopPropagation();
@@ -218,15 +218,15 @@ const CreateEvent = () => {
             </div>
 
             <div className="form-actions">
-              <button 
-                type="button" 
+              <button
+                type="button"
                 className="cancel-btn"
                 onClick={() => navigate('/')}
               >
                 Cancel
               </button>
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="submit-btn"
                 disabled={isSubmitting}
               >

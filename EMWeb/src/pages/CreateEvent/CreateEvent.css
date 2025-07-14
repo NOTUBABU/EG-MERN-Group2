@@ -1,9 +1,8 @@
-
-.have-to-fill{
- color: red;  
+.have-to-fill {
+  color: red;
 }
 
-.create-event-page{
+.create-event-page {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #fad961 100%);
 }
 
@@ -190,24 +189,24 @@
   .create-event-container {
     padding: 15px;
   }
-  
+
   .create-event-form {
     padding: 20px;
   }
-  
+
   .create-event-form h1 {
     font-size: 2rem;
   }
-  
+
   .form-row {
     flex-direction: column;
     gap: 0;
   }
-  
+
   .form-actions {
     flex-direction: column;
   }
-  
+
   .cancel-btn,
   .submit-btn {
     width: 100%;
@@ -218,13 +217,13 @@
   .create-event-form h1 {
     font-size: 1.5rem;
   }
-  
+
   .form-group input,
   .form-group textarea {
     padding: 10px 12px;
     font-size: 0.9rem;
   }
-  
+
   .image-placeholder {
     padding: 30px;
     font-size: 1rem;
